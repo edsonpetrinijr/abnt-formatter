@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="popup.css" />
     <title>Formatador ABNT</title>
   </head>
-  <body>
-    <h1>Formatar Referência Bibliográfica</h1>
+  <body class="light">
+    <header>
+      <h1>Formatar Referência Bibliográfica</h1>
+      <img
+        id="theme"
+        src="images/lightMode/moon.svg"
+        alt="Ícone da troca de temas"
+      />
+    </header>
 
     <p id="formattedReference">
       <span id="author"></span>. "<span id="title"></span>".
       <span id="websiteOwnerName"></span>. Disponível em:
-      <a id="websiteLink"></a>. Acesso em:
+      <a id="websiteLink" class="light"></a>. Acesso em:
       <span id="dateOfAccessOnTheWebsite"></span>.
     </p>
 
@@ -27,7 +34,12 @@
     </div>
 
     <button id="copyTextToClipboardButton">
-      <img src="images/clipboard.svg" alt="Ícone de Copiar e Colar" /> Copiar
+      <img
+        id="copyTextToClipboardIcon"
+        src="images/lightMode/clipboard.svg"
+        alt="Ícone de Copiar e Colar"
+      />
+      Copiar
     </button>
 
     <script src="popup.js"></script>

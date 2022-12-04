@@ -9,6 +9,25 @@
 body {
   padding: 14px 18px;
   font-family: "Roboto", sans-serif;
+  transition: background-color 0.5s;
+  transition: color 0.5s;
+}
+
+body.light {
+  background-color: #fafafa;
+  color: #212121;
+}
+
+body.dark {
+  background-color: #212121;
+  color: #fafafa;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 h1 {
@@ -17,6 +36,18 @@ h1 {
 
 p {
   margin: 8px 0;
+}
+
+a {
+  transition: color 0.5s;
+}
+
+a.light {
+  color: #283593;
+}
+
+a.dark {
+  color: #9fa8da;
 }
 
 div {
@@ -28,6 +59,18 @@ div {
 input {
   padding: 4px 8px;
   margin-top: 2px;
+  transition: background-color 0.5s;
+  transition: color 0.5s;
+}
+
+input.light {
+  background-color: #fafafa;
+  color: #424242;
+}
+
+input.dark {
+  background-color: #424242;
+  color: #fafafa;
 }
 
 button {
@@ -37,6 +80,18 @@ button {
   justify-content: center;
   align-items: center;
   padding: 4px;
+  transition: background-color 0.5s;
+  transition: color 0.5s;
+}
+
+button.light {
+  background-color: #fafafa;
+  color: #424242;
+}
+
+button.dark {
+  background-color: #424242;
+  color: #fafafa;
 }
 
 button img {

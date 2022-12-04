@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Formatador ABNT",
+  "description": "Uma extensão para o Google Chrome para formatação de referências bibliográficas seguindo as normas da ABNT.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "images/Ícone.png"
+  },
+  "permissions": ["tabs", "contextMenus", "storage", "clipboardWrite"],
+  "icons": {
+    "16": "images/Ícone.png",
+    "32": "images/Ícone.png",
+    "48": "images/Ícone.png",
+    "128": "images/Ícone.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

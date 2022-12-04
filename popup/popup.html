@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>Formatador ABNT</title>
+  </head>
+  <body>
+    <h1>Formatar Referência Bibliográfica</h1>
+
+    <p id="formattedReference">
+      <span id="author"></span>. "<span id="title"></span>".
+      <span id="websiteOwnerName"></span>. Disponível em:
+      <a id="websiteLink"></a>. Acesso em:
+      <span id="dateOfAccessOnTheWebsite"></span>.
+    </p>
+
+    <div>
+      <label for="websiteOwnerNameInput">
+        Indique o proprietário do site (<i
+          >Exemplo: Brasil Escola, Mundo Educação...</i
+        >)
+      </label>
+      <input type="text" id="websiteOwnerNameInput" />
+    </div>
+
+    <button id="copyTextToClipboardButton">
+      <img src="images/clipboard.svg" alt="Ícone de Copiar e Colar" /> Copiar
+    </button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
